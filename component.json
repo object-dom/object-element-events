@@ -1,0 +1,23 @@
+{
+  "name": "object-element-events",
+  "repo": "shallker/object-element-events",
+  "description": "ObjectElement event",
+  "version": "0.0.1",
+  "keywords": [],
+  "paths": ["../"],
+  "local": ["object-element"],
+  "dependencies": {
+    "component/delegate": "*",
+    "component/event": "*"  
+  },
+  "development": {
+    "shallker/simple-test": "*", 
+    "shallker/dom-helper": "*" 
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/object-element-events.js"
+  ]
+}
