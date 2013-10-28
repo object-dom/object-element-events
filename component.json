@@ -4,9 +4,8 @@
   "description": "ObjectElement event",
   "version": "0.0.1",
   "keywords": [],
-  "paths": ["../"],
-  "local": ["object-element"],
   "dependencies": {
+    "object-element/object-element": "*",
     "component/delegate": "*",
     "component/event": "*"  
   },
