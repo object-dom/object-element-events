@@ -6,6 +6,7 @@
   "keywords": [],
   "dependencies": {
     "object-dom/object-element": "*",
+    "object-dom/object-document": "*",
     "component/delegate": "*",
     "component/event": "*"  
   },
