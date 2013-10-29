@@ -1,11 +1,11 @@
 {
   "name": "object-element-events",
-  "repo": "shallker/object-element-events",
+  "repo": "object-dom/object-element-events",
   "description": "ObjectElement event",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "object-element/object-element": "*",
+    "object-dom/object-element": "*",
     "component/delegate": "*",
     "component/event": "*"  
   },
