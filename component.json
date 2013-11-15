@@ -2,7 +2,7 @@
   "name": "object-element-events",
   "repo": "object-dom/object-element-events",
   "description": "ObjectElement event",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {
     "object-dom/object-element": "*",
