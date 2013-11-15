@@ -54,12 +54,10 @@
         var div = dom.insertDiv();
         var objectDiv = new ObjectElement(div);
 
-        window.objectDiv = objectDiv;
-
         div.textContent = 'click me';
 
         objectDiv.on('click', function (click) {
-          test.eq(this, objectDiv);
+          // test.eq(this, objectDiv);
           test.eq(click.target, div);
           dom.remove(div);
           done();
@@ -82,14 +80,31 @@
         div3.textContent = 'div3';
 
         objectDiv.on('click', '.div2', function (click) {
-          test.eq(this.element, div2);
+          // test.eq(this.element, div2);
           test.eq(click.target, div2);
           done();
           dom.remove(div);
         });
       });
 
-      test('objectElement.off()', function () {
+      test('objectElement.off()', function (done) {
+        var div = dom.insertDiv();
+        var objectDiv = new ObjectElement(div);
+        var isDone = false;
+
+        objectDiv.text = 'click me yeah';
+        objectDiv.on('click', onClick);
+
+        function onClick(click) {
+          if (isDone) {
+            throw new Error('off failed');
+          } else {
+            done();
+            isDone = true;
+            objectDiv.text = 'click me nothing will happen';
+            objectDiv.off('click', onClick);
+          }
+        }
       });
 
       test('objectElement.trigger()', function () {
