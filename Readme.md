@@ -24,6 +24,7 @@
 
 ## Todo
 - remove dependencies delegate and events
+- let callback executed on objectElement
 
 ## License
 
